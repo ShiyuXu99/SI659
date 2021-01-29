@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+<body>
+
+<p>I thought there is going to be a sphere at the right most position with a red color. Then there's a cube with blue color that have shadow on the
+left of the sphere. Then there's a yellow cylinder behind those two items. The three items are standing on a plane with a teal color.
+</p>
+
+<a-scene background="white">
+    <a-sphere position="0 1.25 -5" radius="1.25" color="red" shadow></a-sphere>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" width="1" height="1" depth="1" material="blue" shadow></a-box>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="yellow" shadow></a-cylinder>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="teal" shadow></a-plane>
+        <a-sky color="silver"></a-sky>
+        </a-scene>
+
+
+</body>
+</html>
